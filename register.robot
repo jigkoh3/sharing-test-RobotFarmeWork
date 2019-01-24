@@ -4,7 +4,7 @@ Library                ExtendedSelenium2Library
 Library                BuiltIn
 Library                String
 
-#Suite Teardown         Close Browser
+Suite Teardown         Close Browser
 
 *** Variable ***
 ${url}               http://localhost:4200/login
