@@ -1,15 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190124 10:51:01.533" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
-<suite source="C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\login.robot" id="s1" name="Login">
-<test id="s1-t1" name="login">
+<robot rpa="false" generated="20190124 11:38:25.894" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\register.robot" id="s1" name="Register">
+<test id="s1-t1" name="register_back_button">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190124 10:51:01.905" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
-<status status="PASS" endtime="20190124 10:51:10.570" starttime="20190124 10:51:01.904"></status>
+<msg timestamp="20190124 11:38:26.161" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
+<status status="PASS" endtime="20190124 11:38:32.757" starttime="20190124 11:38:26.161"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<status status="PASS" endtime="20190124 11:38:32.758" starttime="20190124 11:38:32.758"></status>
+</kw>
+<kw name="Click_Button_register">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="btn-register"]</arg>
+</arguments>
+<msg timestamp="20190124 11:38:32.759" level="INFO">Clicking button '//*[@name="btn-register"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:38.025" starttime="20190124 11:38:32.758"></status>
+</kw>
+<status status="PASS" endtime="20190124 11:38:38.025" starttime="20190124 11:38:32.758"></status>
+</kw>
+<kw name="Input_firstname">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="firstname"]</arg>
+<arg>firstname</arg>
+</arguments>
+<msg timestamp="20190124 11:38:38.025" level="INFO">Typing text 'firstname' into text field '//*[@name="firstname"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:41.288" starttime="20190124 11:38:38.025"></status>
+</kw>
+<status status="PASS" endtime="20190124 11:38:41.288" starttime="20190124 11:38:38.025"></status>
+</kw>
+<kw name="Input_lastname">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="lastname"]</arg>
+<arg>lastname</arg>
+</arguments>
+<msg timestamp="20190124 11:38:41.288" level="INFO">Typing text 'lastname' into text field '//*[@name="lastname"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:44.575" starttime="20190124 11:38:41.288"></status>
+</kw>
+<status status="PASS" endtime="20190124 11:38:44.575" starttime="20190124 11:38:41.288"></status>
+</kw>
+<kw name="Input_email">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="email"]</arg>
+<arg>lastname@gmail.com</arg>
+</arguments>
+<msg timestamp="20190124 11:38:44.575" level="INFO">Typing text 'lastname@gmail.com' into text field '//*[@name="email"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:47.970" starttime="20190124 11:38:44.575"></status>
+</kw>
+<status status="PASS" endtime="20190124 11:38:47.970" starttime="20190124 11:38:44.575"></status>
+</kw>
+<kw name="Click_Button_next">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="btn-next"]</arg>
+</arguments>
+<msg timestamp="20190124 11:38:47.979" level="INFO">Clicking button '//*[@name="btn-next"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:53.188" starttime="20190124 11:38:47.977"></status>
+</kw>
+<status status="PASS" endtime="20190124 11:38:53.188" starttime="20190124 11:38:47.975"></status>
 </kw>
 <kw name="Input_username">
 <kw name="Input Text" library="Selenium2Library">
@@ -18,17 +83,10 @@
 <arg>//*[@name="username"]</arg>
 <arg>name</arg>
 </arguments>
-<msg timestamp="20190124 10:51:10.574" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:10.713" starttime="20190124 10:51:10.573"></status>
+<msg timestamp="20190124 11:38:53.188" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:56.482" starttime="20190124 11:38:53.188"></status>
 </kw>
-<status status="PASS" endtime="20190124 10:51:10.713" starttime="20190124 10:51:10.572"></status>
-</kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>${delay}</arg>
-</arguments>
-<status status="PASS" endtime="20190124 10:51:10.714" starttime="20190124 10:51:10.714"></status>
+<status status="PASS" endtime="20190124 11:38:56.482" starttime="20190124 11:38:53.188"></status>
 </kw>
 <kw name="Input_password">
 <kw name="Input Text" library="Selenium2Library">
@@ -37,131 +95,43 @@
 <arg>//*[@name="password"]</arg>
 <arg>1234</arg>
 </arguments>
-<msg timestamp="20190124 10:51:10.716" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:13.874" starttime="20190124 10:51:10.716"></status>
+<msg timestamp="20190124 11:38:56.482" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
+<status status="PASS" endtime="20190124 11:38:59.768" starttime="20190124 11:38:56.482"></status>
 </kw>
-<status status="PASS" endtime="20190124 10:51:13.874" starttime="20190124 10:51:10.715"></status>
+<status status="PASS" endtime="20190124 11:38:59.768" starttime="20190124 11:38:56.482"></status>
 </kw>
-<kw name="Click_Button_login">
+<kw name="Click_back_Button">
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@name="btn-login"]</arg>
+<arg>//*[@name="btn-prev"]</arg>
 </arguments>
-<msg timestamp="20190124 10:51:13.875" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:19.059" starttime="20190124 10:51:13.875"></status>
+<msg timestamp="20190124 11:38:59.768" level="INFO">Clicking button '//*[@name="btn-prev"]'.</msg>
+<status status="PASS" endtime="20190124 11:39:04.997" starttime="20190124 11:38:59.768"></status>
 </kw>
-<status status="PASS" endtime="20190124 10:51:19.059" starttime="20190124 10:51:13.874"></status>
-</kw>
-<status status="PASS" endtime="20190124 10:51:19.060" critical="yes" starttime="20190124 10:51:01.902"></status>
-</test>
-<test id="s1-t2" name="login_fell1">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20190124 10:51:19.075" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
-<status status="PASS" endtime="20190124 10:51:25.461" starttime="20190124 10:51:19.074"></status>
-</kw>
-<kw name="Input_username">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="username"]</arg>
-<arg>name</arg>
-</arguments>
-<msg timestamp="20190124 10:51:25.462" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:28.604" starttime="20190124 10:51:25.462"></status>
-</kw>
-<status status="PASS" endtime="20190124 10:51:28.605" starttime="20190124 10:51:25.461"></status>
-</kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>${delay}</arg>
-</arguments>
-<status status="PASS" endtime="20190124 10:51:28.609" starttime="20190124 10:51:28.607"></status>
-</kw>
-<kw name="Click_Button_login">
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="btn-login"]</arg>
-</arguments>
-<msg timestamp="20190124 10:51:28.614" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:33.872" starttime="20190124 10:51:28.613"></status>
-</kw>
-<status status="PASS" endtime="20190124 10:51:33.873" starttime="20190124 10:51:28.611"></status>
+<status status="PASS" endtime="20190124 11:39:04.997" starttime="20190124 11:38:59.768"></status>
 </kw>
 <tags>
-<tag>fell1</tag>
+<tag>back_button</tag>
 </tags>
-<status status="PASS" endtime="20190124 10:51:33.875" critical="yes" starttime="20190124 10:51:19.072"></status>
+<status status="PASS" endtime="20190124 11:39:04.997" critical="yes" starttime="20190124 11:38:26.161"></status>
 </test>
-<test id="s1-t3" name="login_fell2">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20190124 10:51:33.890" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
-<status status="PASS" endtime="20190124 10:51:40.186" starttime="20190124 10:51:33.888"></status>
-</kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>${delay}</arg>
-</arguments>
-<status status="PASS" endtime="20190124 10:51:40.187" starttime="20190124 10:51:40.187"></status>
-</kw>
-<kw name="Input_password">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="password"]</arg>
-<arg>1234</arg>
-</arguments>
-<msg timestamp="20190124 10:51:40.188" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:43.311" starttime="20190124 10:51:40.188"></status>
-</kw>
-<status status="PASS" endtime="20190124 10:51:43.312" starttime="20190124 10:51:40.188"></status>
-</kw>
-<kw name="Click_Button_login">
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="btn-login"]</arg>
-</arguments>
-<msg timestamp="20190124 10:51:43.317" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190124 10:51:48.571" starttime="20190124 10:51:43.316"></status>
-</kw>
-<status status="PASS" endtime="20190124 10:51:48.571" starttime="20190124 10:51:43.314"></status>
-</kw>
-<tags>
-<tag>fell2</tag>
-</tags>
-<status status="PASS" endtime="20190124 10:51:48.572" critical="yes" starttime="20190124 10:51:33.885"></status>
-</test>
-<status status="PASS" endtime="20190124 10:51:48.575" starttime="20190124 10:51:01.537"></status>
+<status status="PASS" endtime="20190124 11:39:04.997" starttime="20190124 11:38:25.898"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">fell1</stat>
-<stat fail="0" pass="1">fell2</stat>
+<stat fail="0" pass="1">back_button</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Login" pass="3">Login</stat>
+<stat fail="0" id="s1" name="Register" pass="1">Register</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190124 10:51:01.887" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\login.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
+<msg timestamp="20190124 11:38:26.161" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\register.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
 Traceback (most recent call last):
   None
 PYTHONPATH:
