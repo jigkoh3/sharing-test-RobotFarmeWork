@@ -19,15 +19,15 @@ login
     Input_password
     Click_Button_login
 
-login_fell1
-    [tags]      fell1
+login_fail1
+    [tags]      fail1
     Open Browser    ${url}    chrome
     Input_username
     Set Selenium Speed  ${delay}
     Click_Button_login
 
-login_fell2
-    [tags]      fell2
+login_fail2
+    [tags]      fail2
     Open Browser    ${url}    chrome
     Set Selenium Speed  ${delay}
     Input_password

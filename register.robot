@@ -38,8 +38,8 @@ register_back_button
     Input_password
     Click_back_Button
 
-register_fell1
-    [tags]      fell1
+register_fail1
+    [tags]      fail1
     Open Browser            ${url}                     chrome
     Set Selenium Speed      ${delay}
     Click_Button_register
@@ -47,8 +47,8 @@ register_fell1
     Input_email
     Click_Button_next
 
-register_fell2
-    [tags]      fell2
+register_fail2
+    [tags]      fail2
     Open Browser            ${url}                     chrome
     Set Selenium Speed      ${delay}
     Click_Button_register
@@ -56,8 +56,8 @@ register_fell2
     Input_email
     Click_Button_next
 
-register_fell3
-    [tags]      fell3
+register_fail3
+    [tags]      fail3
     Open Browser            ${url}                     chrome
     Set Selenium Speed      ${delay}
     Click_Button_register
@@ -65,8 +65,8 @@ register_fell3
     Input_lastname
     Click_Button_next
 
-register_fell4
-    [tags]      fell4
+register_fail4
+    [tags]      fail4
     Open Browser            ${url}                     chrome
     Set Selenium Speed      ${delay}
     Click_Button_register
@@ -77,8 +77,8 @@ register_fell4
     Input_password
     Click_Button_register3
 
-register_fell5
-    [Tags]      fell5
+register_fail5
+    [Tags]      fail5
     Open Browser            ${url}                     chrome
     Set Selenium Speed      ${delay}
     Click_Button_register
