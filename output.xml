@@ -1,167 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190125 10:20:46.348" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
-<suite source="C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\login.robot" id="s1" name="Login">
-<test id="s1-t1" name="login">
+<robot rpa="false" generated="20190125 15:22:21.574" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot" id="s1" name="Info-Donate">
+<test id="s1-t1" name="บริจาก">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190125 10:20:46.920" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
-<status status="PASS" endtime="20190125 10:20:54.854" starttime="20190125 10:20:46.919"></status>
-</kw>
-<kw name="Input_username">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="username"]</arg>
-<arg>name</arg>
-</arguments>
-<msg timestamp="20190125 10:20:54.856" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
-<status status="PASS" endtime="20190125 10:20:55.013" starttime="20190125 10:20:54.855"></status>
-</kw>
-<status status="PASS" endtime="20190125 10:20:55.014" starttime="20190125 10:20:54.854"></status>
+<msg timestamp="20190125 15:22:21.877" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/home'.</msg>
+<status status="PASS" endtime="20190125 15:22:28.724" starttime="20190125 15:22:21.877"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${delay}</arg>
 </arguments>
-<status status="PASS" endtime="20190125 10:20:55.014" starttime="20190125 10:20:55.014"></status>
+<status status="PASS" endtime="20190125 15:22:28.726" starttime="20190125 15:22:28.725"></status>
 </kw>
-<kw name="Input_password">
+<kw name="Click_Button_บริจาก">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@class="mat-flat-button mat-primary"]</arg>
+</arguments>
+<msg timestamp="20190125 15:22:28.727" level="INFO">Clicking element '//*[@class="mat-flat-button mat-primary"]'.</msg>
+<status status="PASS" endtime="20190125 15:22:30.913" starttime="20190125 15:22:28.727"></status>
+</kw>
+<status status="PASS" endtime="20190125 15:22:30.913" starttime="20190125 15:22:28.726"></status>
+</kw>
+<kw name="Input_name_product">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@name="password"]</arg>
-<arg>1234</arg>
+<arg>//*[@id="mat-input-1"]</arg>
+<arg>เสื้อ</arg>
 </arguments>
-<msg timestamp="20190125 10:20:55.016" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
-<status status="PASS" endtime="20190125 10:20:58.239" starttime="20190125 10:20:55.014"></status>
+<msg timestamp="20190125 15:22:30.913" level="INFO">Typing text 'เสื้อ' into text field '//*[@id="mat-input-1"]'.</msg>
+<status status="PASS" endtime="20190125 15:22:34.148" starttime="20190125 15:22:30.913"></status>
 </kw>
-<status status="PASS" endtime="20190125 10:20:58.240" starttime="20190125 10:20:55.014"></status>
+<status status="PASS" endtime="20190125 15:22:34.148" starttime="20190125 15:22:30.913"></status>
 </kw>
-<kw name="Click_Button_login">
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
+<kw name="Click_select_size">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@name="btn-login"]</arg>
+<arg>//*[@class="mat-select-arrow"]</arg>
 </arguments>
-<msg timestamp="20190125 10:20:58.241" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190125 10:21:03.456" starttime="20190125 10:20:58.241"></status>
+<msg timestamp="20190125 15:22:34.148" level="INFO">Clicking element '//*[@class="mat-select-arrow"]'.</msg>
+<status status="PASS" endtime="20190125 15:22:36.345" starttime="20190125 15:22:34.148"></status>
 </kw>
-<status status="PASS" endtime="20190125 10:21:03.456" starttime="20190125 10:20:58.241"></status>
+<status status="PASS" endtime="20190125 15:22:36.345" starttime="20190125 15:22:34.148"></status>
 </kw>
-<status status="PASS" endtime="20190125 10:21:03.456" critical="yes" starttime="20190125 10:20:46.918"></status>
-</test>
-<test id="s1-t2" name="login_fell1">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Click_option">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${url}</arg>
-<arg>chrome</arg>
+<arg>//*[@id="mat-option-0"]</arg>
 </arguments>
-<msg timestamp="20190125 10:21:03.464" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
-<status status="PASS" endtime="20190125 10:21:10.137" starttime="20190125 10:21:03.464"></status>
+<msg timestamp="20190125 15:22:36.345" level="INFO">Clicking element '//*[@id="mat-option-0"]'.</msg>
+<status status="PASS" endtime="20190125 15:22:38.531" starttime="20190125 15:22:36.345"></status>
 </kw>
-<kw name="Input_username">
+<status status="PASS" endtime="20190125 15:22:38.531" starttime="20190125 15:22:36.345"></status>
+</kw>
+<kw name="Input_detail_product">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@name="username"]</arg>
-<arg>name</arg>
+<arg>//*[@class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"]</arg>
+<arg>เสื้อกันหนาวสภาพดี</arg>
 </arguments>
-<msg timestamp="20190125 10:21:10.139" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
-<status status="PASS" endtime="20190125 10:21:13.379" starttime="20190125 10:21:10.139"></status>
+<msg timestamp="20190125 15:22:38.536" level="INFO">Typing text 'เสื้อกันหนาวสภาพดี' into text field '//*[@class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"]'.</msg>
+<status status="PASS" endtime="20190125 15:22:41.873" starttime="20190125 15:22:38.531"></status>
 </kw>
-<status status="PASS" endtime="20190125 10:21:13.379" starttime="20190125 10:21:10.137"></status>
+<status status="PASS" endtime="20190125 15:22:41.873" starttime="20190125 15:22:38.531"></status>
 </kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>${delay}</arg>
-</arguments>
-<status status="PASS" endtime="20190125 10:21:13.380" starttime="20190125 10:21:13.380"></status>
-</kw>
-<kw name="Click_Button_login">
+<kw name="Click_Button_บันทึก">
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@name="btn-login"]</arg>
+<arg>//*[@class="full-width mat-flat-button mat-primary"]</arg>
 </arguments>
-<msg timestamp="20190125 10:21:13.381" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190125 10:21:18.534" starttime="20190125 10:21:13.381"></status>
+<msg timestamp="20190125 15:22:41.873" level="INFO">Clicking button '//*[@class="full-width mat-flat-button mat-primary"]'.</msg>
+<status status="PASS" endtime="20190125 15:22:47.126" starttime="20190125 15:22:41.873"></status>
 </kw>
-<status status="PASS" endtime="20190125 10:21:18.535" starttime="20190125 10:21:13.380"></status>
+<status status="PASS" endtime="20190125 15:22:47.126" starttime="20190125 15:22:41.873"></status>
 </kw>
-<tags>
-<tag>fell1</tag>
-</tags>
-<status status="PASS" endtime="20190125 10:21:18.536" critical="yes" starttime="20190125 10:21:03.463"></status>
+<status status="PASS" endtime="20190125 15:22:47.126" critical="yes" starttime="20190125 15:22:21.874"></status>
 </test>
-<test id="s1-t3" name="login_fell2">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20190125 10:21:18.546" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/login'.</msg>
-<status status="PASS" endtime="20190125 10:21:25.778" starttime="20190125 10:21:18.546"></status>
-</kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>${delay}</arg>
-</arguments>
-<status status="PASS" endtime="20190125 10:21:25.779" starttime="20190125 10:21:25.779"></status>
-</kw>
-<kw name="Input_password">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="password"]</arg>
-<arg>1234</arg>
-</arguments>
-<msg timestamp="20190125 10:21:25.780" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
-<status status="PASS" endtime="20190125 10:21:28.961" starttime="20190125 10:21:25.780"></status>
-</kw>
-<status status="PASS" endtime="20190125 10:21:28.962" starttime="20190125 10:21:25.780"></status>
-</kw>
-<kw name="Click_Button_login">
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="btn-login"]</arg>
-</arguments>
-<msg timestamp="20190125 10:21:28.963" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190125 10:21:34.178" starttime="20190125 10:21:28.963"></status>
-</kw>
-<status status="PASS" endtime="20190125 10:21:34.178" starttime="20190125 10:21:28.962"></status>
-</kw>
-<tags>
-<tag>fell2</tag>
-</tags>
-<status status="PASS" endtime="20190125 10:21:34.207" critical="yes" starttime="20190125 10:21:18.545"></status>
-</test>
-<status status="PASS" endtime="20190125 10:21:34.230" starttime="20190125 10:20:46.352"></status>
+<status status="PASS" endtime="20190125 15:22:47.141" starttime="20190125 15:22:21.590"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">fell1</stat>
-<stat fail="0" pass="1">fell2</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Login" pass="3">Login</stat>
+<stat fail="0" id="s1" name="Info-Donate" pass="1">Info-Donate</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190125 10:20:46.899" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\login.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
+<msg timestamp="20190125 15:22:21.858" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
 Traceback (most recent call last):
   None
 PYTHONPATH:
