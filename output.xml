@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190125 15:22:21.574" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190125 15:37:38.086" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite source="C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot" id="s1" name="Info-Donate">
-<test id="s1-t1" name="บริจาก">
+<test id="s1-t1" name="Back_Button2">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190125 15:22:21.877" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/home'.</msg>
-<status status="PASS" endtime="20190125 15:22:28.724" starttime="20190125 15:22:21.877"></status>
+<msg timestamp="20190125 15:37:38.418" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/home'.</msg>
+<status status="PASS" endtime="20190125 15:37:44.584" starttime="20190125 15:37:38.418"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${delay}</arg>
 </arguments>
-<status status="PASS" endtime="20190125 15:22:28.726" starttime="20190125 15:22:28.725"></status>
+<status status="PASS" endtime="20190125 15:37:44.589" starttime="20190125 15:37:44.588"></status>
 </kw>
 <kw name="Click_Button_บริจาก">
 <kw name="Click Element" library="Selenium2Library">
@@ -24,10 +24,10 @@
 <arguments>
 <arg>//*[@class="mat-flat-button mat-primary"]</arg>
 </arguments>
-<msg timestamp="20190125 15:22:28.727" level="INFO">Clicking element '//*[@class="mat-flat-button mat-primary"]'.</msg>
-<status status="PASS" endtime="20190125 15:22:30.913" starttime="20190125 15:22:28.727"></status>
+<msg timestamp="20190125 15:37:44.593" level="INFO">Clicking element '//*[@class="mat-flat-button mat-primary"]'.</msg>
+<status status="PASS" endtime="20190125 15:37:46.880" starttime="20190125 15:37:44.592"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:30.913" starttime="20190125 15:22:28.726"></status>
+<status status="PASS" endtime="20190125 15:37:46.880" starttime="20190125 15:37:44.592"></status>
 </kw>
 <kw name="Input_name_product">
 <kw name="Input Text" library="Selenium2Library">
@@ -36,10 +36,10 @@
 <arg>//*[@id="mat-input-1"]</arg>
 <arg>เสื้อ</arg>
 </arguments>
-<msg timestamp="20190125 15:22:30.913" level="INFO">Typing text 'เสื้อ' into text field '//*[@id="mat-input-1"]'.</msg>
-<status status="PASS" endtime="20190125 15:22:34.148" starttime="20190125 15:22:30.913"></status>
+<msg timestamp="20190125 15:37:46.880" level="INFO">Typing text 'เสื้อ' into text field '//*[@id="mat-input-1"]'.</msg>
+<status status="PASS" endtime="20190125 15:37:50.098" starttime="20190125 15:37:46.880"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:34.148" starttime="20190125 15:22:30.913"></status>
+<status status="PASS" endtime="20190125 15:37:50.098" starttime="20190125 15:37:46.880"></status>
 </kw>
 <kw name="Click_select_size">
 <kw name="Click Element" library="Selenium2Library">
@@ -47,10 +47,10 @@
 <arguments>
 <arg>//*[@class="mat-select-arrow"]</arg>
 </arguments>
-<msg timestamp="20190125 15:22:34.148" level="INFO">Clicking element '//*[@class="mat-select-arrow"]'.</msg>
-<status status="PASS" endtime="20190125 15:22:36.345" starttime="20190125 15:22:34.148"></status>
+<msg timestamp="20190125 15:37:50.098" level="INFO">Clicking element '//*[@class="mat-select-arrow"]'.</msg>
+<status status="PASS" endtime="20190125 15:37:52.223" starttime="20190125 15:37:50.098"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:36.345" starttime="20190125 15:22:34.148"></status>
+<status status="PASS" endtime="20190125 15:37:52.223" starttime="20190125 15:37:50.098"></status>
 </kw>
 <kw name="Click_option">
 <kw name="Click Element" library="Selenium2Library">
@@ -58,10 +58,10 @@
 <arguments>
 <arg>//*[@id="mat-option-0"]</arg>
 </arguments>
-<msg timestamp="20190125 15:22:36.345" level="INFO">Clicking element '//*[@id="mat-option-0"]'.</msg>
-<status status="PASS" endtime="20190125 15:22:38.531" starttime="20190125 15:22:36.345"></status>
+<msg timestamp="20190125 15:37:52.223" level="INFO">Clicking element '//*[@id="mat-option-0"]'.</msg>
+<status status="PASS" endtime="20190125 15:37:54.321" starttime="20190125 15:37:52.223"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:38.531" starttime="20190125 15:22:36.345"></status>
+<status status="PASS" endtime="20190125 15:37:54.321" starttime="20190125 15:37:52.223"></status>
 </kw>
 <kw name="Input_detail_product">
 <kw name="Input Text" library="Selenium2Library">
@@ -70,25 +70,28 @@
 <arg>//*[@class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"]</arg>
 <arg>เสื้อกันหนาวสภาพดี</arg>
 </arguments>
-<msg timestamp="20190125 15:22:38.536" level="INFO">Typing text 'เสื้อกันหนาวสภาพดี' into text field '//*[@class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"]'.</msg>
-<status status="PASS" endtime="20190125 15:22:41.873" starttime="20190125 15:22:38.531"></status>
+<msg timestamp="20190125 15:37:54.321" level="INFO">Typing text 'เสื้อกันหนาวสภาพดี' into text field '//*[@class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"]'.</msg>
+<status status="PASS" endtime="20190125 15:37:57.643" starttime="20190125 15:37:54.321"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:41.873" starttime="20190125 15:22:38.531"></status>
+<status status="PASS" endtime="20190125 15:37:57.643" starttime="20190125 15:37:54.321"></status>
 </kw>
-<kw name="Click_Button_บันทึก">
+<kw name="Click_Button_ยกเลิก">
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@class="full-width mat-flat-button mat-primary"]</arg>
+<arg>//*[@class="full-width mat-stroked-button"]</arg>
 </arguments>
-<msg timestamp="20190125 15:22:41.873" level="INFO">Clicking button '//*[@class="full-width mat-flat-button mat-primary"]'.</msg>
-<status status="PASS" endtime="20190125 15:22:47.126" starttime="20190125 15:22:41.873"></status>
+<msg timestamp="20190125 15:37:57.643" level="INFO">Clicking button '//*[@class="full-width mat-stroked-button"]'.</msg>
+<status status="PASS" endtime="20190125 15:38:02.902" starttime="20190125 15:37:57.643"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:47.126" starttime="20190125 15:22:41.873"></status>
+<status status="PASS" endtime="20190125 15:38:02.902" starttime="20190125 15:37:57.643"></status>
 </kw>
-<status status="PASS" endtime="20190125 15:22:47.126" critical="yes" starttime="20190125 15:22:21.874"></status>
+<tags>
+<tag>Back_Button2</tag>
+</tags>
+<status status="PASS" endtime="20190125 15:38:02.902" critical="yes" starttime="20190125 15:37:38.416"></status>
 </test>
-<status status="PASS" endtime="20190125 15:22:47.141" starttime="20190125 15:22:21.590"></status>
+<status status="PASS" endtime="20190125 15:38:02.902" starttime="20190125 15:37:38.086"></status>
 </suite>
 <statistics>
 <total>
@@ -96,13 +99,14 @@
 <stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">Back_Button2</stat>
 </tag>
 <suite>
 <stat fail="0" id="s1" name="Info-Donate" pass="1">Info-Donate</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190125 15:22:21.858" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
+<msg timestamp="20190125 15:37:38.395" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
 Traceback (most recent call last):
   None
 PYTHONPATH:
