@@ -7,7 +7,7 @@ Library           String
 #Suite Teardown    Close Browser
 
 *** Variable ***
-${url}               http://localhost:4200/home
+${url}               http://3.1.6.15
 ${delay}               1
 
 

@@ -7,7 +7,7 @@ Library                String
 #Suite Teardown         Close Browser
 
 *** Variable ***
-${url}               http://localhost:4200/login
+${url}               http://3.1.6.15
 ${delay}               1
 
 
@@ -17,78 +17,35 @@ register
     Open Browser            ${url}                     chrome
     Set Selenium Speed      ${delay}
     Click_Button_register
-    Input_firstname
-    Input_lastname
-    Input_email
-    Click_Button_next
     Input_username
     Input_password
-    Click_Button_register3
-
-register_back_button
-    [Tags]      back_button
-    Open Browser            ${url}                     chrome
-    Set Selenium Speed      ${delay}
-    Click_Button_register
+    Click_Button_next
     Input_firstname
     Input_lastname
     Input_email
-    Click_Button_next
+    Click_ButtonII
+    Click_select_size
+    Click_size_s
+    Click_Button_FinishRegister
+
+Back_Button
+    [tags]      Back_Button
+    Open Browser            ${url}                     chrome
+    Set Selenium Speed      ${delay}
+    Click_Button_register
     Input_username
     Input_password
-    Click_back_Button
-
-register_fail1
-    [tags]      fail1
-    Open Browser            ${url}                     chrome
-    Set Selenium Speed      ${delay}
-    Click_Button_register
-    Input_lastname
-    Input_email
     Click_Button_next
-
-register_fail2
-    [tags]      fail2
-    Open Browser            ${url}                     chrome
-    Set Selenium Speed      ${delay}
-    Click_Button_register
-    Input_firstname
-    Input_email
-    Click_Button_next
-
-register_fail3
-    [tags]      fail3
-    Open Browser            ${url}                     chrome
-    Set Selenium Speed      ${delay}
-    Click_Button_register
-    Input_firstname
-    Input_lastname
-    Click_Button_next
-
-register_fail4
-    [tags]      fail4
-    Open Browser            ${url}                     chrome
-    Set Selenium Speed      ${delay}
-    Click_Button_register
     Input_firstname
     Input_lastname
     Input_email
-    Click_Button_next
-    Input_password
-    Click_Button_register3
-
-register_fail5
-    [Tags]      fail5
-    Open Browser            ${url}                     chrome
-    Set Selenium Speed      ${delay}
-    Click_Button_register
-    Input_firstname
-    Input_lastname
-    Input_email
-    Click_Button_next
-    Input_username
-    Click_Button_register3
-
+    Click_ButtonII
+    Click_select_size
+    Click_size_s
+    Click_back_Button1
+    Click_back_Button2
+    Click_back_Button3
+    
 
 
 
@@ -98,19 +55,29 @@ register_fail5
 Click_Button_register
     Click Button    //*[@name="btn-register"]
 Click_Button_next
-    Click Button    //*[@name="btn-next"]
-Click_Button_register3
-    Click Button    //*[@name="btn-register"]
-Click_back_Button
-    Click Button   //*[@name="btn-prev"]
+    Click Button    //*[@name="btnNext1"]
+Click_ButtonII
+    Click Button    //*[@name="btnNext2"]
+Click_select_size
+    Click Element   //*[@class="mat-select-arrow-wrapper"]
+Click_size_s
+    Click Element   //*[@name="matOptionS"]
+Click_Button_FinishRegister
+    Click Button    //*[@name="btnFinishRegister"]  
+Click_back_Button1
+    Click Element   //*[@aria-posinset="1"]
+Click_back_Button2
+    Click Element   //*[@aria-posinset="2"]
+Click_back_Button3
+    Click Element   //*[@aria-posinset="3"]    
 
 Input_firstname
-    Input Text      //*[@name="firstname"]      firstname
+    Input Text      //*[@name="inputFirstName"]      firstname
 Input_lastname
-    Input Text      //*[@name="lastname"]       lastname
+    Input Text      //*[@name="inputLastName"]       lastname
 Input_email
-    Input Text      //*[@name="email"]      lastname@gmail.com
+    Input Text      //*[@name="inputEmail"]      lastname@gmail.com
 Input_username
-    Input Text      //*[@name="username"]       name
+    Input Text      //*[@name="inputUsername"]       name
 Input_password
-    Input Text      //*[@name="password"]     1234 
+    Input Text      //*[@name="inputPassword"]     1234 
