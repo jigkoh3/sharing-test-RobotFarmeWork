@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190128 17:14:26.682" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190130 11:11:26.479" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite source="C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot" id="s1" name="Info-Donate">
-<test id="s1-t1" name="บริจาก">
+<test id="s1-t1" name="Back_Button1">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190128 17:14:26.996" level="INFO">Opening browser 'chrome' to base url 'http://3.1.6.15'.</msg>
-<status status="PASS" endtime="20190128 17:14:32.676" starttime="20190128 17:14:26.995"></status>
+<msg timestamp="20190130 11:11:26.907" level="INFO">Opening browser 'chrome' to base url 'http://3.1.6.15'.</msg>
+<status status="PASS" endtime="20190130 11:11:33.245" starttime="20190130 11:11:26.907"></status>
 </kw>
 <kw name="Input_username">
 <kw name="Input Text" library="Selenium2Library">
@@ -18,17 +18,17 @@
 <arg>//*[@name="username"]</arg>
 <arg>name</arg>
 </arguments>
-<msg timestamp="20190128 17:14:32.678" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:32.888" starttime="20190128 17:14:32.678"></status>
+<msg timestamp="20190130 11:11:33.248" level="INFO">Typing text 'name' into text field '//*[@name="username"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:33.439" starttime="20190130 11:11:33.248"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:32.888" starttime="20190128 17:14:32.677"></status>
+<status status="PASS" endtime="20190130 11:11:33.439" starttime="20190130 11:11:33.246"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${delay}</arg>
 </arguments>
-<status status="PASS" endtime="20190128 17:14:32.890" starttime="20190128 17:14:32.889"></status>
+<status status="PASS" endtime="20190130 11:11:33.441" starttime="20190130 11:11:33.441"></status>
 </kw>
 <kw name="Input_password">
 <kw name="Input Text" library="Selenium2Library">
@@ -37,10 +37,10 @@
 <arg>//*[@name="password"]</arg>
 <arg>1234</arg>
 </arguments>
-<msg timestamp="20190128 17:14:32.890" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:36.054" starttime="20190128 17:14:32.890"></status>
+<msg timestamp="20190130 11:11:33.443" level="INFO">Typing text '1234' into text field '//*[@name="password"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:36.733" starttime="20190130 11:11:33.443"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:36.055" starttime="20190128 17:14:32.890"></status>
+<status status="PASS" endtime="20190130 11:11:36.733" starttime="20190130 11:11:33.442"></status>
 </kw>
 <kw name="Click_Button_login">
 <kw name="Click Button" library="Selenium2Library">
@@ -48,17 +48,17 @@
 <arguments>
 <arg>//*[@name="btn-login"]</arg>
 </arguments>
-<msg timestamp="20190128 17:14:36.056" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:41.331" starttime="20190128 17:14:36.056"></status>
+<msg timestamp="20190130 11:11:36.734" level="INFO">Clicking button '//*[@name="btn-login"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:41.889" starttime="20190130 11:11:36.734"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:41.331" starttime="20190128 17:14:36.055"></status>
+<status status="PASS" endtime="20190130 11:11:41.889" starttime="20190130 11:11:36.734"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${delay}</arg>
 </arguments>
-<status status="PASS" endtime="20190128 17:14:41.334" starttime="20190128 17:14:41.332"></status>
+<status status="PASS" endtime="20190130 11:11:41.891" starttime="20190130 11:11:41.890"></status>
 </kw>
 <kw name="Click_Button_บริจาก">
 <kw name="Click Button" library="Selenium2Library">
@@ -66,10 +66,10 @@
 <arguments>
 <arg>//*[@name="btnOnCreateDonate"]</arg>
 </arguments>
-<msg timestamp="20190128 17:14:41.335" level="INFO">Clicking button '//*[@name="btnOnCreateDonate"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:46.773" starttime="20190128 17:14:41.335"></status>
+<msg timestamp="20190130 11:11:41.893" level="INFO">Clicking button '//*[@name="btnOnCreateDonate"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:47.374" starttime="20190130 11:11:41.892"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:46.775" starttime="20190128 17:14:41.335"></status>
+<status status="PASS" endtime="20190130 11:11:47.375" starttime="20190130 11:11:41.891"></status>
 </kw>
 <kw name="Click_Button_UploadImg">
 <kw name="Click Button" library="Selenium2Library">
@@ -77,10 +77,10 @@
 <arguments>
 <arg>//*[@name="btnUploadImg"]</arg>
 </arguments>
-<msg timestamp="20190128 17:14:46.777" level="INFO">Clicking button '//*[@name="btnUploadImg"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:52.058" starttime="20190128 17:14:46.777"></status>
+<msg timestamp="20190130 11:11:47.375" level="INFO">Clicking button '//*[@name="btnUploadImg"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:52.740" starttime="20190130 11:11:47.375"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:52.058" starttime="20190128 17:14:46.776"></status>
+<status status="PASS" endtime="20190130 11:11:52.740" starttime="20190130 11:11:47.375"></status>
 </kw>
 <kw name="Input_name_product">
 <kw name="Input Text" library="Selenium2Library">
@@ -89,10 +89,10 @@
 <arg>//*[@name="inputName"]</arg>
 <arg>เสื้อ</arg>
 </arguments>
-<msg timestamp="20190128 17:14:52.063" level="INFO">Typing text 'เสื้อ' into text field '//*[@name="inputName"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:55.441" starttime="20190128 17:14:52.062"></status>
+<msg timestamp="20190130 11:11:52.741" level="INFO">Typing text 'เสื้อ' into text field '//*[@name="inputName"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:56.105" starttime="20190130 11:11:52.741"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:55.443" starttime="20190128 17:14:52.061"></status>
+<status status="PASS" endtime="20190130 11:11:56.106" starttime="20190130 11:11:52.740"></status>
 </kw>
 <kw name="Click_select_size">
 <kw name="Click Element" library="Selenium2Library">
@@ -100,21 +100,21 @@
 <arguments>
 <arg>//*[@class="mat-select-arrow"]</arg>
 </arguments>
-<msg timestamp="20190128 17:14:55.446" level="INFO">Clicking element '//*[@class="mat-select-arrow"]'.</msg>
-<status status="PASS" endtime="20190128 17:14:57.843" starttime="20190128 17:14:55.446"></status>
+<msg timestamp="20190130 11:11:56.108" level="INFO">Clicking element '//*[@class="mat-select-arrow"]'.</msg>
+<status status="PASS" endtime="20190130 11:11:58.508" starttime="20190130 11:11:56.108"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:14:57.844" starttime="20190128 17:14:55.446"></status>
+<status status="PASS" endtime="20190130 11:11:58.508" starttime="20190130 11:11:56.108"></status>
 </kw>
 <kw name="Click_option">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@ng-reflect-value="S"]</arg>
+<arg>//*[@name="optionSize"]</arg>
 </arguments>
-<msg timestamp="20190128 17:14:57.847" level="INFO">Clicking element '//*[@ng-reflect-value="S"]'.</msg>
-<status status="PASS" endtime="20190128 17:15:00.028" starttime="20190128 17:14:57.847"></status>
+<msg timestamp="20190130 11:11:58.514" level="INFO">Clicking element '//*[@name="optionSize"]'.</msg>
+<status status="PASS" endtime="20190130 11:12:00.833" starttime="20190130 11:11:58.514"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:15:00.030" starttime="20190128 17:14:57.845"></status>
+<status status="PASS" endtime="20190130 11:12:00.834" starttime="20190130 11:11:58.512"></status>
 </kw>
 <kw name="Input_detail_product">
 <kw name="Input Text" library="Selenium2Library">
@@ -123,25 +123,28 @@
 <arg>//*[@name="inputDetail"]</arg>
 <arg>เสื้อกันหนาวสภาพดี</arg>
 </arguments>
-<msg timestamp="20190128 17:15:00.031" level="INFO">Typing text 'เสื้อกันหนาวสภาพดี' into text field '//*[@name="inputDetail"]'.</msg>
-<status status="PASS" endtime="20190128 17:15:03.469" starttime="20190128 17:15:00.031"></status>
+<msg timestamp="20190130 11:12:00.836" level="INFO">Typing text 'เสื้อกันหนาวสภาพดี' into text field '//*[@name="inputDetail"]'.</msg>
+<status status="PASS" endtime="20190130 11:12:04.373" starttime="20190130 11:12:00.836"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:15:03.470" starttime="20190128 17:15:00.031"></status>
+<status status="PASS" endtime="20190130 11:12:04.373" starttime="20190130 11:12:00.836"></status>
 </kw>
-<kw name="Click_Button_บันทึก">
+<kw name="Click_Button_ยกเลิก">
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@class="full-width mat-flat-button mat-primary"]</arg>
+<arg>//*[@name="btnCancel"]</arg>
 </arguments>
-<msg timestamp="20190128 17:15:03.471" level="INFO">Clicking button '//*[@class="full-width mat-flat-button mat-primary"]'.</msg>
-<status status="PASS" endtime="20190128 17:15:08.764" starttime="20190128 17:15:03.471"></status>
+<msg timestamp="20190130 11:12:04.375" level="INFO">Clicking button '//*[@name="btnCancel"]'.</msg>
+<status status="PASS" endtime="20190130 11:12:09.690" starttime="20190130 11:12:04.375"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:15:08.765" starttime="20190128 17:15:03.470"></status>
+<status status="PASS" endtime="20190130 11:12:09.691" starttime="20190130 11:12:04.374"></status>
 </kw>
-<status status="PASS" endtime="20190128 17:15:08.767" critical="yes" starttime="20190128 17:14:26.994"></status>
+<tags>
+<tag>Back_Button1</tag>
+</tags>
+<status status="PASS" endtime="20190130 11:12:09.692" critical="yes" starttime="20190130 11:11:26.906"></status>
 </test>
-<status status="PASS" endtime="20190128 17:15:08.778" starttime="20190128 17:14:26.687"></status>
+<status status="PASS" endtime="20190130 11:12:09.703" starttime="20190130 11:11:26.483"></status>
 </suite>
 <statistics>
 <total>
@@ -149,13 +152,14 @@
 <stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">Back_Button1</stat>
 </tag>
 <suite>
 <stat fail="0" id="s1" name="Info-Donate" pass="1">Info-Donate</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190128 17:14:26.970" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
+<msg timestamp="20190130 11:11:26.891" level="ERROR">Error in file 'C:\Users\Acer\Desktop\robot\sharing-test-RobotFarmeWork\info-donate.robot': Importing test library 'ExtendedSelenium2Library' failed: ImportError: No module named ExtendedSelenium2Library
 Traceback (most recent call last):
   None
 PYTHONPATH:

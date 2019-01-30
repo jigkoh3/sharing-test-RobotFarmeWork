@@ -18,7 +18,6 @@ ${delay}               1
     Set Selenium Speed  ${delay}
     Input_password
     Click_Button_login
-    
     Set Selenium Speed  ${delay}
     Click_Button_บริจาก
     Click_Button_UploadImg
@@ -31,20 +30,19 @@ ${delay}               1
 Back_Button1
     [Tags]      Back_Button1
     Open Browser    ${url}    chrome
+    Input_username
+    Set Selenium Speed  ${delay}
+    Input_password
+    Click_Button_login
     Set Selenium Speed  ${delay}
     Click_Button_บริจาก
-    Click_Button_ยกเลิก
-
-Back_Button2
-    [Tags]      Back_Button2
-     Open Browser    ${url}    chrome
-    Set Selenium Speed  ${delay}
-    Click_Button_บริจาก
+    Click_Button_UploadImg
     Input_name_product
     Click_select_size
     Click_option
     Input_detail_product
     Click_Button_ยกเลิก
+
 
 
 
@@ -64,7 +62,7 @@ Click_Button_UploadImg
 Click_select_size
     Click Element   //*[@class="mat-select-arrow"]
 Click_option
-    Click Element   //*[@ng-reflect-value="S"]
+    Click Element   //*[@name="optionSize"]
 Click_Button_บันทึก        
     Click Button    //*[@name="btnSave"]
 Click_Button_ยกเลิก
